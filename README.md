@@ -5,8 +5,7 @@
 # Dynagenic 
 A FabricMC project template generator  
  <br> 
- <br> 
-
+ 
  ##### Notes: Dynagenic was designed to look like in the image below on elementaryOS. It looks different in other operating systems.
 
 <p align="center">
