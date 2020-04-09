@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Dynagenic
+GenericName=FabricMC project generator app
+Comment=App with a user interface to generate projects for the FabricMC loader
+Categories=Utility;
+Exec=com.github.levoment.dynagenic
+Icon=com.github.levoment.dynagenic
+Terminal=false
+Type=Application
+Keywords=Dynagenic;Generator;
