@@ -603,7 +603,7 @@ public class Dynagenic : Gtk.Application {
                 continue;
             }
 
-            void* buffer = null;
+            uint8[] buffer = {};
             Posix.off_t offset;
             while (archive.read_data_block (out buffer, out offset) == Archive.Result.OK) {
                 if (extractor.write_data_block (buffer, offset) != Archive.Result.OK) {
