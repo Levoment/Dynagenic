@@ -136,7 +136,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The version of the mod. It will be appended to the output file when compiling the mod</property>
-                <property name="text" translatable="yes">1.0.0</property>
                 <property name="placeholder_text" translatable="yes">1.0.0</property>
               </object>
               <packing>
@@ -180,7 +179,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The main package that will contain the project's content</property>
-                <property name="text" translatable="yes">com.github.levoment.superaxes</property>
                 <property name="placeholder_text" translatable="yes">com.github.username.repository</property>
               </object>
               <packing>
@@ -224,7 +222,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The base name that will be used for the output file/s when compiling the mod</property>
-                <property name="text" translatable="yes">[1.15.2] Example Mod</property>
                 <property name="placeholder_text" translatable="yes">[1.15.2] ExampleMod</property>
               </object>
               <packing>
@@ -268,7 +265,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The Mod ID is something unique. Usually three letters, but you can use more. It will be used to find the Main Entry Point. When used to register items and blocks, it will be used to find their textures, models, loot tables, recipes, advancements, etc. You will want to use this in both, Java code and in data driven content like JSON files.</property>
-                <property name="text" translatable="yes">⌐■ᴗ■</property>
                 <property name="placeholder_text" translatable="yes">modid</property>
               </object>
               <packing>
@@ -312,7 +308,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The name of the mod.</property>
-                <property name="text" translatable="yes">SuperAxes</property>
                 <property name="placeholder_text" translatable="yes">Example Mod</property>
               </object>
               <packing>
@@ -356,7 +351,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="tooltip_text" translatable="yes">The name for the main class. This field is not verified. Whatever is put in here will be used for the class name.</property>
-                <property name="text" translatable="yes">SuperAxes</property>
                 <property name="placeholder_text" translatable="yes">ExampleMod</property>
               </object>
               <packing>
