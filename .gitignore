@@ -1,2 +1,6 @@
 # The meson build directory
 **/build
+.flatpak-builder/
+build-dir/
+io.github.levoment.Dynagenic.json
+snap/

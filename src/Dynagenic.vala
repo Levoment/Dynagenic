@@ -604,10 +604,9 @@ public class Dynagenic : Gtk.Application {
             }
 
             void* buffer = null;
-            size_t buffer_length;
             Posix.off_t offset;
-            while (archive.read_data_block (out buffer, out buffer_length, out offset) == Archive.Result.OK) {
-                if (extractor.write_data_block (buffer, buffer_length, offset) != Archive.Result.OK) {
+            while (archive.read_data_block (out buffer, out offset) == Archive.Result.OK) {
+                if (extractor.write_data_block (buffer, offset) != Archive.Result.OK) {
                     break;
                 }
             }
@@ -1113,12 +1112,12 @@ public class Dynagenic : Gtk.Application {
 
                 File currentFile = enumerator.get_child (info);
 
-                if (currentFile.query_file_type (FileQueryInfoFlags.NOFOLLOW_SYMLINKS) == FileType.DIRECTORY) {
+                if (currentFile.query_file_type (FileQueryInfoFlags.NOFOLLOW_SYMLINKS) == GLib.FileType.DIRECTORY) {
                     if (!this.listOfFoldersToRemove.contains (currentFile)) this.listOfFoldersToRemove.add (currentFile);
                     delete_directory (currentFile.get_path ());
                 }
 
-                if (currentFile.query_file_type (FileQueryInfoFlags.NOFOLLOW_SYMLINKS) == FileType.REGULAR) {
+                if (currentFile.query_file_type (FileQueryInfoFlags.NOFOLLOW_SYMLINKS) == GLib.FileType.REGULAR) {
                     this.listOfFilesToDelete += currentFile;
                 }
             }
