@@ -82,4 +82,5 @@
         install_dir: join_paths(get_option('datadir'), 'applications')
     )
 
-    meson.add_install_script('meson/makeDirectories.sh', join_paths(get_option('prefix'), get_option('datadir')))
+    #meson.add_install_script('meson/makeDirectories.sh', join_paths(get_option('prefix'), get_option('datadir')))
+    meson.add_install_script('meson/post_install.py', join_paths(get_option('prefix'), get_option('datadir'), 'dynagenic'))
