@@ -120,7 +120,7 @@ public class Dynagenic : Gtk.Application {
             int width;
             int height;
             main_window.get_size (out width, out height);
-            main_window.set_default_size (width + 150, height);
+            main_window.set_default_size (width + 100, height + 50);
             this.main_window.show_all ();
 
             // Get the Gtk.Switch for the stable versions
