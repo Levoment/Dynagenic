@@ -65,16 +65,19 @@ public class ApiVersions {
                 log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find ApiVersions.json in the current directory.");
                 // Try to get ApiVersions.json from the appimage mount point
                 string appDirPath = GLib.Environment.get_variable ("APPDIR");
-                if (!(File.new_for_path (appDirPath + "/ApiVersions.json").query_exists())) {
+                if (!(File.new_for_path (appDirPath + "/usr/share/dynagenic/resources/ApiVersions.json").query_exists())) {
                     log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find ApiVersions.json in the app image mount point");
                 } else {
+                    log(null, LogLevelFlags.LEVEL_DEBUG, "✔️  ApiVersions.json was found in: " + appDirPath + "/usr/share/dynagenic/resources/ApiVersions.json");
                     fileToLoad = appDirPath + "/usr/share/dynagenic/resources/ApiVersions.json";
                     // Try to save the file to the current directory
                     try {
                         File apiVersionsFile = File.new_for_path (fileToLoad);
-                        apiVersionsFile.copy (File.new_for_path("./ApiVersions.json"), FileCopyFlags.OVERWRITE);
+                        // Copy the file to the current folder
+                        log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Saving file to: " + GLib.Path.get_dirname(Environment.get_variable ("ARGV0")) + "/ApiVersions.json");
+                        apiVersionsFile.copy (File.new_for_path(GLib.Path.get_dirname(Environment.get_variable ("ARGV0")) + "/ApiVersions.json"), FileCopyFlags.OVERWRITE);
                     } catch (GLib.Error error) {
-                        log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not write ApiVersions.json to the current directory");
+                        log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not save ApiVersions.json to the current directory");
                     }
                 }
             } else {
@@ -118,7 +121,7 @@ public class ApiVersions {
          // Write to a file
          try {
             File apiVersionsFile = File.new_for_uri ("https://addons-ecs.forgesvc.net/api/v2/addon/306612/files");
-            File fileToSave = File.new_for_path("./ApiVersions.json");
+            File fileToSave = File.new_for_path((Environment.get_variable ("ARGV0")) + "/ApiVersions.json");
             FileOutputStream outputStream = fileToSave.replace (null, false, FileCreateFlags.REPLACE_DESTINATION);
             var dataInputStream = new DataInputStream (apiVersionsFile.read ());
             var dataStream = new DataOutputStream(outputStream);

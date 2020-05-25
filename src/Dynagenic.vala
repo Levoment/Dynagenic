@@ -27,6 +27,12 @@ public class Dynagenic : Gtk.Application {
     private Gtk.Entry licenseGtkEntry;
     private Gtk.Entry mainClassNameGtkEntry;
 
+    private Gtk.Label gradlePropertiesMinecraftVersionGtkLabel;
+    private Gtk.Label gradlePropertiesYarnMappingsGtkLabel;
+    private Gtk.Label gradlePropertiesLoaderVersionGtkLabel;
+    private Gtk.Label gradlePropertiesFabricApiVersionGtkLabel;
+
+
     private string modJsonPath;
     private string mixinJsonPath;
     private string mainClassFilePath;
@@ -49,31 +55,6 @@ public class Dynagenic : Gtk.Application {
     private Gee.List<string> listOfFoldersToNotDelete;
 
     private const string BRAND_STYLESHEET = "
-    @define-color buttonAndTitleBarColor shade (#64baff, 0.85);
-    @define-color colorPrimary shade (@selected_bg_color, 0.95);
-    @define-color textColorSecondary #ffffff;
-    
-    .title {
-        text-shadow: 0 1.0px alpha (#000, 0.5);
-        color: @selected_fg_color;
-    }
-
-    .titlebar button image {
-        color: @textColorSecondary;
-    }
-    
-    .background.csd .titlebar.default-decoration .horizontal.left button image {
-        color: @text_color;
-    }
-
-    dialog .title {
-        color: @text_color;
-    }
-
-    .titlebar {
-        background-color: shade(@selected_bg_color, 0.95);
-    }
-    
     * {
         font-size: large;
     }
@@ -221,7 +202,12 @@ public class Dynagenic : Gtk.Application {
             this.noGtkButton = builder.get_object ("noGtkButton") as Gtk.Button;
             noGtkButton.clicked.connect (noGtkButtonClicked);
 
-            // Show dialog asking user if it is okay to connect to gather the Minecraft versions
+            // Get the Gradle Properties labels
+            this.gradlePropertiesMinecraftVersionGtkLabel = builder.get_object ("gradlePropertiesMinecraftVersionGtkLabel") as Gtk.Label;
+            this.gradlePropertiesYarnMappingsGtkLabel = builder.get_object ("gradlePropertiesYarnMappingsGtkLabel") as Gtk.Label;
+            this.gradlePropertiesLoaderVersionGtkLabel = builder.get_object ("gradlePropertiesLoaderVersionGtkLabel") as Gtk.Label;
+            this.gradlePropertiesFabricApiVersionGtkLabel = builder.get_object ("gradlePropertiesFabricApiVersionGtkLabel") as Gtk.Label;
+
             // Get the versions
             this.versions = new Versions(onlyStableVersions);
 
@@ -258,16 +244,31 @@ public class Dynagenic : Gtk.Application {
     }
 
     public void onVersionSelected() {
+        // Clear the Gradle Properties labels
+        this.gradlePropertiesMinecraftVersionGtkLabel.set_label ("");
+        this.gradlePropertiesYarnMappingsGtkLabel.set_label ("");
+        this.gradlePropertiesLoaderVersionGtkLabel.set_label ("");
+        this.gradlePropertiesFabricApiVersionGtkLabel.set_label ("");
+
         string versionString = this.minecraftVersionsComboBox.get_active_text();
         if (versionString != null) {
+            // Set the Minecraft version
+            this.gradlePropertiesMinecraftVersionGtkLabel.set_label (versionString);
             // Get the versions
             this.loaderVersions = new LoaderVersions(versionString);
+            // Set the Mappings and Loader version
+            this.gradlePropertiesYarnMappingsGtkLabel.set_label (this.loaderVersions.mappingsVersionString);
+            this.gradlePropertiesLoaderVersionGtkLabel.set_label (this.loaderVersions.loaderVersionString);
+            
+            // Get the API version
             this.apiVersions = new ApiVersions(versionString);
 
             if (!this.apiVersions.hasAPIVersion) {
+                this.gradlePropertiesFabricApiVersionGtkLabel.set_label ("⚠️ Could not find a Fabric API version for the selected Minecraft version");
                 showCouldNotFindApiVersionGtkDialog ();
             } else {
                 this.continueGeneratingProject = true;
+                this.gradlePropertiesFabricApiVersionGtkLabel.set_label (this.apiVersions.apiVersionString);
             }
         }
     }
