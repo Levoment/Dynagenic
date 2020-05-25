@@ -63,6 +63,20 @@ public class ApiVersions {
             fileToLoad = "ApiVersions.json";
             if (!(File.new_for_path (Environment.get_current_dir () + "/ApiVersions.json").query_exists ())) {
                 log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find ApiVersions.json in the current directory.");
+                // Try to get ApiVersions.json from the appimage mount point
+                string appDirPath = GLib.Environment.get_variable ("APPDIR");
+                if (!(File.new_for_path (appDirPath + "/ApiVersions.json").query_exists())) {
+                    log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find ApiVersions.json in the app image mount point");
+                } else {
+                    fileToLoad = appDirPath + "/usr/share/dynagenic/resources/ApiVersions.json";
+                    // Try to save the file to the current directory
+                    try {
+                        File apiVersionsFile = File.new_for_path (fileToLoad);
+                        apiVersionsFile.copy (File.new_for_path("./ApiVersions.json"), FileCopyFlags.OVERWRITE);
+                    } catch (GLib.Error error) {
+                        log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not write ApiVersions.json to the current directory");
+                    }
+                }
             } else {
                 fileToLoad = "ApiVersions.json";
                 log(null, LogLevelFlags.LEVEL_DEBUG, "✔️  ApiVersions.json was found in: " + Environment.get_current_dir ());
@@ -101,51 +115,50 @@ public class ApiVersions {
     }
 
     private void gatherVersions() {
-         // URL to gather the api versions from
-         string url = "https://addons-ecs.forgesvc.net/api/v2/addon/306612/files";
-
-         // Create an HTTP session to get the api version
-         var session = new Soup.Session ();
-         var message = new Soup.Message ("GET", url);
- 
-         // send the HTTP request and wait for response
-         session.send_message (message);
- 
-         // TODO add an error message if the connection was not sucessful
- 
-         string messageData = (string) message.response_body.data;
-         writeTheGatheredVersionsToAFile(message.response_body.data);
-         parseJSON(messageData);
-    }
-
-    private void writeTheGatheredVersionsToAFile(uint8[] versionsToWrite) {
-        
-        var file = File.new_for_path (this.pathToFile);
-        {
-            log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Creating a file");
-            // Create a new file with this name
-            try {
-                var file_stream = file.replace (null, false, FileCreateFlags.REPLACE_DESTINATION);
-
-                // Test for the existence of file
-                if (file.query_exists ()) {
-                    log(null, LogLevelFlags.LEVEL_DEBUG, "✔️  File successfully created");
-                }
-
-                // Write text data to file
-                var data_stream = new DataOutputStream (file_stream);
-                foreach(uint8 responseByte in versionsToWrite ) {
-                    data_stream.put_byte (responseByte);
-                }
-                
-            } catch (GLib.IOError inputOutputError) {
-                log(null, LogLevelFlags.LEVEL_DEBUG, "❌  There was an error when trying to write a file with the Fabric API versions. " + inputOutputError.message);
-            } catch (GLib.Error fileCreationError) {
-                log(null, LogLevelFlags.LEVEL_DEBUG, "❌  There was an error when trying to create a file with the Fabric API versions");
+         // Write to a file
+         try {
+            File apiVersionsFile = File.new_for_uri ("https://addons-ecs.forgesvc.net/api/v2/addon/306612/files");
+            File fileToSave = File.new_for_path("./ApiVersions.json");
+            FileOutputStream outputStream = fileToSave.replace (null, false, FileCreateFlags.REPLACE_DESTINATION);
+            var dataInputStream = new DataInputStream (apiVersionsFile.read ());
+            var dataStream = new DataOutputStream(outputStream);
+            string line;
+            string allLines = "";
+            // Read lines until end of file (null) is reached
+            while ((line = dataInputStream.read_line (null)) != null) {
+                allLines += line + "\n";
             }
-            
-        } // Streams closed at this point
-        log(null, LogLevelFlags.LEVEL_DEBUG, "✔️  Updated Fabric API versions written to file");
+            dataInputStream.close ();
+            Json.Generator generator = new Json.Generator ();
+            Parser jsonParser = new Parser();
+            try {
+                if (jsonParser.load_from_data(allLines)) {
+                    // Get the root node:
+                    Json.Node node = jsonParser.get_root ();
+                    // Set indentation and prettify
+                    generator.indent_char = 9;
+                    generator.indent = 1;
+                    generator.pretty = true;
+                    // Set the root node
+                    generator.set_root (node);
+                    // Get the prettified JSON
+                    string prettifiedJSON = generator.to_data (null);
+                    // Write the prettified JSON to a file
+                    dataStream.put_string(prettifiedJSON);
+                    // Close the streams
+                    dataStream.close ();
+                    outputStream.close ();
+                } else {
+                    log(null, LogLevelFlags.LEVEL_DEBUG, "❌  There was an error parsing the data");
+                }
+            } catch (GLib.Error error) {
+                // TODO display the error
+                log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Data could not be parsed: " + error.message); 
+            }
+            parseJSON(allLines);
+         } catch (Error error) {
+            log(null, LogLevelFlags.LEVEL_DEBUG, "❌  There was an error when trying to write the Fabric API versions file to the current directory. " + error.message);
+         }
     }
 
     private void parseJSON(string stringData) {
@@ -161,8 +174,7 @@ public class ApiVersions {
                 }
             } catch (GLib.Error error) {
                 // TODO display the error
-                log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Data could not be parsed: " + error.message);
-                
+                log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Data could not be parsed: " + error.message); 
             }
         } else {
             log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Passed string data was null");

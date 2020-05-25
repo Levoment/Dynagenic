@@ -93,9 +93,8 @@ public class Dynagenic : Gtk.Application {
 
 
         string fileToLoad = "";
-
     
-        try{
+        try {
             // Get the data directories
             string[] dataDirs = Environment.get_system_data_dirs ();
             log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Listing data dirs in the OS");
@@ -118,12 +117,18 @@ public class Dynagenic : Gtk.Application {
                 fileToLoad = "MainApplication.glade";
                 if (!(File.new_for_path (Environment.get_current_dir () + "/MainApplication.glade").query_exists ())) {
                     log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find MainApplication.glade in the current directory.");
+                    // Try to get the MainApplication.glade file from the appimage
+                    string appDirPath = GLib.Environment.get_variable ("APPDIR");
+                    if (!(File.new_for_path (appDirPath + "/usr/share/dynagenic/resources/MainApplication.glade").query_exists())) {
+                        log(null, LogLevelFlags.LEVEL_DEBUG, "❌  Could not find MainApplication.glade in the app image mount point: " + appDirPath + "usr/share/dynagenic/resources/MainApplication.glade");
+                    } else {
+                        fileToLoad = appDirPath + "/usr/share/dynagenic/resources/MainApplication.glade";
+                    }
                 } else {
                     fileToLoad = "MainApplication.glade";
                     log(null, LogLevelFlags.LEVEL_DEBUG, "✔️  MainApplication.glade was found in: " + Environment.get_current_dir ());
                 }
             }
-
 
             builder.add_from_file(fileToLoad);
 
@@ -720,8 +725,8 @@ public class Dynagenic : Gtk.Application {
                             line += " ";
                         }
                         line += "\"minecraft\": ";
-                        if ("20" in versionString) line += "\"1.16.*\"";
-                        if ("19" in versionString) line += "\"1.15.*\"";
+                        if ("20w" in versionString) line += "\"1.16.x\"";
+                        if ("19w" in versionString) line += "\"1.15.x\"";
                     } else {
                         minecraftVersionRegex = new Regex (minecraftVersionRegexPattern, RegexCompileFlags.CASELESS);
                         line = minecraftVersionRegex.replace (line, line.length, 0, versionString);
