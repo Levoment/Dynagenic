@@ -8314,6 +8314,45 @@
 		"gameVersionFlavor" : null
 	},
 	{
+		"id" : 2968503,
+		"displayName" : "[1.15.2] Fabric API 0.11.1 build 312",
+		"fileName" : "fabric-api-0.11.1+build.312-1.15.jar",
+		"fileDate" : "2020-05-29T22:54:21.85Z",
+		"fileLength" : 547695,
+		"releaseType" : 1,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2968/503/fabric-api-0.11.1+build.312-1.15.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 162424134
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 1049084112
+			}
+		],
+		"packageFingerprint" : 1718692256,
+		"gameVersion" : [
+			"Fabric",
+			"1.15.2"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
 		"id" : 2830522,
 		"displayName" : "[1.15-pre1] Fabric API 0.4.13 build 263",
 		"fileName" : "fabric-api-0.4.13+build.263-1.15.jar",
@@ -8420,6 +8459,45 @@
 		"packageFingerprint" : 898207569,
 		"gameVersion" : [
 			"1.16-Snapshot"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2970291,
+		"displayName" : "[20w22a] Fabric API 0.11.2 build 351",
+		"fileName" : "fabric-api-0.11.2+build.351-1.16.jar",
+		"fileDate" : "2020-06-01T16:31:00.31Z",
+		"fileLength" : 532707,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2970/291/fabric-api-0.11.2+build.351-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 4148420962
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 1845677961
+			}
+		],
+		"packageFingerprint" : 929664817,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
 		],
 		"installMetadata" : null,
 		"serverPackFileId" : null,
@@ -9235,45 +9313,6 @@
 		"gameVersionFlavor" : null
 	},
 	{
-		"id" : 2943957,
-		"displayName" : "[1.15.2] Fabric API 0.8.0 build 302",
-		"fileName" : "fabric-api-0.8.0+build.302-1.15.jar",
-		"fileDate" : "2020-04-29T21:27:20.307Z",
-		"fileLength" : 518582,
-		"releaseType" : 1,
-		"fileStatus" : 4,
-		"downloadUrl" : "https://edge.forgecdn.net/files/2943/957/fabric-api-0.8.0+build.302-1.15.jar",
-		"isAlternate" : false,
-		"alternateFileId" : 0,
-		"dependencies" : [
-		],
-		"isAvailable" : true,
-		"modules" : [
-			{
-				"foldername" : "assets",
-				"fingerprint" : 860504683
-			},
-			{
-				"foldername" : "fabric.mod.json",
-				"fingerprint" : 1019160196
-			},
-			{
-				"foldername" : "META-INF",
-				"fingerprint" : 3441229659
-			}
-		],
-		"packageFingerprint" : 3628401278,
-		"gameVersion" : [
-			"Fabric",
-			"1.15.2"
-		],
-		"installMetadata" : null,
-		"serverPackFileId" : null,
-		"hasInstallScript" : false,
-		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
-		"gameVersionFlavor" : null
-	},
-	{
 		"id" : 2894812,
 		"displayName" : "[1.15.2] Fabric API 0.5.0 build 293",
 		"fileName" : "fabric-api-0.5.0+build.293-1.15.jar",
@@ -9426,6 +9465,45 @@
 		"gameVersionFlavor" : null
 	},
 	{
+		"id" : 2943957,
+		"displayName" : "[1.15.2] Fabric API 0.8.0 build 302",
+		"fileName" : "fabric-api-0.8.0+build.302-1.15.jar",
+		"fileDate" : "2020-04-29T21:27:20.307Z",
+		"fileLength" : 518582,
+		"releaseType" : 1,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2943/957/fabric-api-0.8.0+build.302-1.15.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 1019160196
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 3441229659
+			}
+		],
+		"packageFingerprint" : 3628401278,
+		"gameVersion" : [
+			"Fabric",
+			"1.15.2"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
 		"id" : 2937561,
 		"displayName" : "[20w17a] Fabric API 0.6.2 build 327",
 		"fileName" : "fabric-api-0.6.2+build.327-1.16.jar",
@@ -9495,6 +9573,201 @@
 		"packageFingerprint" : 218247456,
 		"gameVersion" : [
 			"1.16-Snapshot"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2968350,
+		"displayName" : "[20w22a] Fabric API 0.11.0 build 349",
+		"fileName" : "fabric-api-0.11.0+build.349-1.16.jar",
+		"fileDate" : "2020-05-29T19:32:37.77Z",
+		"fileLength" : 532008,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2968/350/fabric-api-0.11.0+build.349-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 559068717
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 1809757394
+			}
+		],
+		"packageFingerprint" : 2624448494,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2972933,
+		"displayName" : "[1.16-pre1] Fabric API 0.11.5 build 354",
+		"fileName" : "fabric-api-0.11.5+build.354-1.16.jar",
+		"fileDate" : "2020-06-05T10:55:51.423Z",
+		"fileLength" : 542795,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2972/933/fabric-api-0.11.5+build.354-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 4293855707
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 4096834586
+			}
+		],
+		"packageFingerprint" : 727539841,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2968497,
+		"displayName" : "[20w22a] Fabric API 0.11.1 build 350",
+		"fileName" : "fabric-api-0.11.1+build.350-1.16.jar",
+		"fileDate" : "2020-05-29T22:46:12.377Z",
+		"fileLength" : 532031,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2968/497/fabric-api-0.11.1+build.350-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 232863695
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 2263364474
+			}
+		],
+		"packageFingerprint" : 166590731,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2968179,
+		"displayName" : "[20w22a] Fabric API 0.10.11 build 348",
+		"fileName" : "fabric-api-0.10.11+build.348-1.16.jar",
+		"fileDate" : "2020-05-29T15:06:06.243Z",
+		"fileLength" : 529429,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2968/179/fabric-api-0.10.11+build.348-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 2469694908
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 668204630
+			}
+		],
+		"packageFingerprint" : 808889655,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2972628,
+		"displayName" : "[1.16-pre1] Fabric API 0.11.4 build 353",
+		"fileName" : "fabric-api-0.11.4+build.353-1.16.jar",
+		"fileDate" : "2020-06-04T21:47:25.433Z",
+		"fileLength" : 540533,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2972/628/fabric-api-0.11.4+build.353-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 4293823327
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 236149555
+			}
+		],
+		"packageFingerprint" : 1565198709,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
 		],
 		"installMetadata" : null,
 		"serverPackFileId" : null,
@@ -9676,45 +9949,6 @@
 		"gameVersionFlavor" : null
 	},
 	{
-		"id" : 2941859,
-		"displayName" : "[20w17a] Fabric API 0.7.0 build 330",
-		"fileName" : "fabric-api-0.7.0+build.330-1.16.jar",
-		"fileDate" : "2020-04-27T12:29:27.307Z",
-		"fileLength" : 522651,
-		"releaseType" : 2,
-		"fileStatus" : 4,
-		"downloadUrl" : "https://edge.forgecdn.net/files/2941/859/fabric-api-0.7.0+build.330-1.16.jar",
-		"isAlternate" : false,
-		"alternateFileId" : 0,
-		"dependencies" : [
-		],
-		"isAvailable" : true,
-		"modules" : [
-			{
-				"foldername" : "assets",
-				"fingerprint" : 860504683
-			},
-			{
-				"foldername" : "fabric.mod.json",
-				"fingerprint" : 1253002849
-			},
-			{
-				"foldername" : "META-INF",
-				"fingerprint" : 2563636052
-			}
-		],
-		"packageFingerprint" : 2990646711,
-		"gameVersion" : [
-			"1.16-Snapshot",
-			"Fabric"
-		],
-		"installMetadata" : null,
-		"serverPackFileId" : null,
-		"hasInstallScript" : false,
-		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
-		"gameVersionFlavor" : null
-	},
-	{
 		"id" : 2894445,
 		"displayName" : "[20w10a] Fabric API 0.4.34 build 303",
 		"fileName" : "fabric-api-0.4.34+build.303-1.16.jar",
@@ -9783,6 +10017,45 @@
 		"packageFingerprint" : 2635312272,
 		"gameVersion" : [
 			"1.16-Snapshot"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2941859,
+		"displayName" : "[20w17a] Fabric API 0.7.0 build 330",
+		"fileName" : "fabric-api-0.7.0+build.330-1.16.jar",
+		"fileDate" : "2020-04-27T12:29:27.307Z",
+		"fileLength" : 522651,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2941/859/fabric-api-0.7.0+build.330-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 1253002849
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 2563636052
+			}
+		],
+		"packageFingerprint" : 2990646711,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
 		],
 		"installMetadata" : null,
 		"serverPackFileId" : null,
@@ -9936,6 +10209,162 @@
 			}
 		],
 		"packageFingerprint" : 2443672748,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2968348,
+		"displayName" : "[1.15.2] Fabric API 0.11.0 build 311",
+		"fileName" : "fabric-api-0.11.0+build.311-1.15.jar",
+		"fileDate" : "2020-05-29T19:21:19Z",
+		"fileLength" : 547564,
+		"releaseType" : 1,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2968/348/fabric-api-0.11.0+build.311-1.15.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 1955695823
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 1837840876
+			}
+		],
+		"packageFingerprint" : 1693528710,
+		"gameVersion" : [
+			"Fabric",
+			"1.15.2"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2972585,
+		"displayName" : "[1.16-pre1] Fabric API 0.11.3 build 352",
+		"fileName" : "fabric-api-0.11.3+build.352-1.16.jar",
+		"fileDate" : "2020-06-04T20:49:41.377Z",
+		"fileLength" : 540901,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2972/585/fabric-api-0.11.3+build.352-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 3185008687
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 411736919
+			}
+		],
+		"packageFingerprint" : 2282849700,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2972982,
+		"displayName" : "[1.16-pre2] Fabric API 0.11.6 build 355",
+		"fileName" : "fabric-api-0.11.6+build.355-1.16.jar",
+		"fileDate" : "2020-06-05T11:55:15.963Z",
+		"fileLength" : 542733,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2972/982/fabric-api-0.11.6+build.355-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 1175043377
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 117264201
+			}
+		],
+		"packageFingerprint" : 470893260,
+		"gameVersion" : [
+			"1.16-Snapshot",
+			"Fabric"
+		],
+		"installMetadata" : null,
+		"serverPackFileId" : null,
+		"hasInstallScript" : false,
+		"gameVersionDateReleased" : "2008-03-01T06:00:00Z",
+		"gameVersionFlavor" : null
+	},
+	{
+		"id" : 2973263,
+		"displayName" : "[1.16-pre2] Fabric API 0.11.7 build 356",
+		"fileName" : "fabric-api-0.11.7+build.356-1.16.jar",
+		"fileDate" : "2020-06-05T19:21:12.64Z",
+		"fileLength" : 542624,
+		"releaseType" : 2,
+		"fileStatus" : 4,
+		"downloadUrl" : "https://edge.forgecdn.net/files/2973/263/fabric-api-0.11.7+build.356-1.16.jar",
+		"isAlternate" : false,
+		"alternateFileId" : 0,
+		"dependencies" : [
+		],
+		"isAvailable" : true,
+		"modules" : [
+			{
+				"foldername" : "assets",
+				"fingerprint" : 860504683
+			},
+			{
+				"foldername" : "fabric.mod.json",
+				"fingerprint" : 2017545785
+			},
+			{
+				"foldername" : "META-INF",
+				"fingerprint" : 869926219
+			}
+		],
+		"packageFingerprint" : 4003392196,
 		"gameVersion" : [
 			"1.16-Snapshot",
 			"Fabric"

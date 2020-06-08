@@ -121,7 +121,7 @@ public class ApiVersions {
          // Write to a file
          try {
             File apiVersionsFile = File.new_for_uri ("https://addons-ecs.forgesvc.net/api/v2/addon/306612/files");
-            File fileToSave = File.new_for_path((Environment.get_variable ("ARGV0")) + "/ApiVersions.json");
+            File fileToSave = File.new_for_path(GLib.Path.get_dirname(Environment.get_variable ("ARGV0")) + "/ApiVersions.json");
             FileOutputStream outputStream = fileToSave.replace (null, false, FileCreateFlags.REPLACE_DESTINATION);
             var dataInputStream = new DataInputStream (apiVersionsFile.read ());
             var dataStream = new DataOutputStream(outputStream);
