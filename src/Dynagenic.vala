@@ -728,7 +728,17 @@ public class Dynagenic : Gtk.Application {
                         line += "\"minecraft\": ";
                         if ("20w" in versionString) line += "\"1.16.x\"";
                         if ("19w" in versionString) line += "\"1.15.x\"";
-                    } else {
+                        
+                    } else if ("1.16-" in versionString) {
+                        int indentation = line.index_of ("\"minecraft");
+                        line = "";
+                        for (int i = 0; i < indentation; i++) {
+                            line += " ";
+                        }
+                        line += "\"minecraft\": ";
+                        line += "\"1.16.x\"";
+                    }
+                    else {
                         minecraftVersionRegex = new Regex (minecraftVersionRegexPattern, RegexCompileFlags.CASELESS);
                         line = minecraftVersionRegex.replace (line, line.length, 0, versionString);
                     }
@@ -830,8 +840,13 @@ public class Dynagenic : Gtk.Application {
                     for (int i = 0; i < indentation; i++) {
                         line += " ";
                     }
+                    string versionString = this.minecraftVersionsComboBox.get_active_text();
 
-                    line += "minecraft_version=" + this.loaderVersions.onlyTheVersionString;
+                    if ("-" in versionString) {
+                        line += "minecraft_version=" + versionString;
+                    } else {
+                        line += "minecraft_version=" + this.loaderVersions.onlyTheVersionString;
+                    }
                 }
 
                 // Place yarn mappings version

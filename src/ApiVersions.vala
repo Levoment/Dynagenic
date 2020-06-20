@@ -190,6 +190,7 @@ public class ApiVersions {
 
         checkSnapshot(jsonArray);
         checkPreReleases(jsonArray);
+        checkReleaseCandidates(jsonArray);
         checkNormalReleases(jsonArray);
     }
 
@@ -310,11 +311,12 @@ public class ApiVersions {
                 string regexPattern = "(?<=\\[)(.+?(?=-pre|Pre-Release))";
                 // Regex case insensitive
                 Regex displayNameRegex = new Regex(regexPattern, RegexCompileFlags.CASELESS);
+                
                 // Check if we have a match
                 if (displayNameRegex.match(displayName, 0, out matchInfo)) {
                     string matchedGameVersion = matchInfo.fetch (0);
-
-                    string selectionGameVersionRegexPattern = "(.+?(?=-pre|Pre-Release))";
+                    //(.+?(?=-pre|Pre-Release))
+                    string selectionGameVersionRegexPattern = "(.+?(?=-pre| Pre-Release))";
                     MatchInfo selectionMatchInfo; 
                     // Regex for extracting the game version from the selection
                     Regex selectionRegex = new Regex(selectionGameVersionRegexPattern, RegexCompileFlags.CASELESS);
@@ -400,7 +402,124 @@ public class ApiVersions {
 
             }
          }
+    }
+
+    private void checkReleaseCandidates(Json.Array jsonArray) {
+        log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Checking for release candidate releases");
+
+         // Variable to know which is the last build
+         int lastBuild = 0;
+
+         // Variable to store the captured string
+         MatchInfo matchInfo;
  
+         // For each node in the array
+         foreach (unowned Json.Node nodeElement in jsonArray.get_elements()) {
+             // Get the object
+             Json.Object jsonObject = nodeElement.get_object();
+ 
+             // Get the display name string
+             unowned string displayName = jsonObject.get_string_member("displayName");
+
+             try {
+                // This pattern matches and captures versions with forms like 1.16-rc1 or 1.16-pre5/6/7/rc1
+                // (?<=\\[)(.+?(?=-rc|\\/rc))
+                string regexPattern = "(?<=\\[)(.+?(?=-rc|\\/rc))";
+                // Regex case insensitive
+                Regex displayNameRegex = new Regex(regexPattern, RegexCompileFlags.CASELESS);
+                
+                // Check if we have a match
+                if (displayNameRegex.match(displayName, 0, out matchInfo)) {
+                    string matchedGameVersion = matchInfo.fetch (0);
+                    // (.+?(?=-rc))
+                    string selectionGameVersionRegexPattern = "(.+?(?=-rc))";
+                    MatchInfo selectionMatchInfo; 
+                    
+                    // Regex for extracting the game version from the selection
+                    Regex selectionRegex = new Regex(selectionGameVersionRegexPattern, RegexCompileFlags.CASELESS);
+                    if (selectionRegex.match(this.versionString, 0, out selectionMatchInfo)) {
+                        string matchedSelectedGameVersion = selectionMatchInfo.fetch (0);
+                        if (matchedSelectedGameVersion in matchedGameVersion) {
+                            log(null, LogLevelFlags.LEVEL_DEBUG, @"✔️  Game version ($versionString) matched in: $displayName");
+                            MatchInfo releaseCandidateMatchInfo;
+                            string releaseCandidateVersionString = this.versionString.substring(this.versionString.length - 1);
+                            // This pattern matches the number/s of the release candidate
+                            string releaseCandidateRegexPattern = "(?<=-rc|\\/rc).*(?=\\])";
+                            // Create a regex to check for the release candidate
+                            Regex releaseCandidateRegex = new Regex(releaseCandidateRegexPattern, RegexCompileFlags.CASELESS);
+                            // Check for the release candidate version
+                            if (releaseCandidateRegex.match(displayName, 0, out releaseCandidateMatchInfo)) {
+                                string matchedReleaseCandidateVersionString = releaseCandidateMatchInfo.fetch (0);
+                                if (releaseCandidateVersionString in matchedReleaseCandidateVersionString) {
+
+                                    // Versions match
+                                    log(null, LogLevelFlags.LEVEL_DEBUG, @"✔️  The selected release candidate version ($versionString) was found in: $displayName");
+                                    
+                                    // Check the build version
+                                    MatchInfo buildVersionMatchInfo;
+                                    int buildVersion = 0;
+                                    // Match anything after "build " until reaching a single double quote character
+                                    string buildVersionPattern = "(?<=build\\s)(.*)";
+                                    Regex buildVersionRegex =  new Regex(buildVersionPattern, RegexCompileFlags.CASELESS);
+                                    log(null, LogLevelFlags.LEVEL_DEBUG, @"🔷  Checking for build version in: $displayName");
+                                    if (buildVersionRegex.match(displayName, 0, out buildVersionMatchInfo)) {
+                                        log(null, LogLevelFlags.LEVEL_DEBUG, @"✔️  A build was found in the string: $displayName");
+                                        if (buildVersionMatchInfo != null) {
+                                            string matchedBuildVersion = buildVersionMatchInfo.fetch (0);
+                                            int matchBuildNumber = int.parse (matchedBuildVersion);
+                                            if (matchBuildNumber != 0) {
+                                                buildVersion = matchBuildNumber;
+                                                log(null, LogLevelFlags.LEVEL_DEBUG, @"✔️  Build version parsed is: $buildVersion");
+                                            } else {
+                                                log(null, LogLevelFlags.LEVEL_DEBUG, @"❌  Build version could not be parsed from: $displayName");
+                                            }
+                                        }
+                                    }
+
+                                    if (buildVersion > lastBuild) {
+                                        // The file name for the api
+                                        unowned string apiFileName = jsonObject.get_string_member("fileName");
+                                        // MatchInfo for extracting the version
+                                        MatchInfo versionStringMatchInfo;
+                                        // Matches anything after fabric-api or fabric-, but before .jar. Does not include api- in the result captured group string
+                                        string regexFileNamePattern = "(?<=fabric-api-|fabric-)([^-api].*)(?=.jar)";
+                                        Regex fileNameRegex = new Regex(regexFileNamePattern, RegexCompileFlags.CASELESS);
+                                        log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Parsing filename to extract API version information");
+                                        log(null, LogLevelFlags.LEVEL_DEBUG, @"🔷  Filename being parsed is: $apiFileName");
+                                        if (fileNameRegex.match(apiFileName, 0, out versionStringMatchInfo)) {
+                                            log(null, LogLevelFlags.LEVEL_DEBUG, @"✔️  Found API version information in: $apiFileName");
+                                            log(null, LogLevelFlags.LEVEL_DEBUG, "🔷  Checking for the API version string format");
+                                            // Create a new regex to check if we are on a newer version of the API
+                                            string newApiVersionPattern = "\\bapi-\\b";
+                                            Regex newApiVersionRegex = new Regex(newApiVersionPattern, RegexCompileFlags.CASELESS);
+                                            if (newApiVersionRegex.match(apiFileName)) {
+                                                log(null, LogLevelFlags.LEVEL_DEBUG, "🆗  API version string format is the new one 'fabric-api-*");
+                                                this._usingAnOlderVersion = false;
+                                            }
+                                            else {
+                                                log(null, LogLevelFlags.LEVEL_DEBUG, "🆗  API version string format is the old one 'fabric-*");
+                                                this._usingAnOlderVersion = true;
+                                            }
+                                            if (versionStringMatchInfo != null) {
+                                                string matchedFileName = versionStringMatchInfo.fetch (0);
+                                                // Set the api version string
+                                                this._apiVersionString = matchedFileName;
+                                                lastBuild = buildVersion;
+                                                
+                                            }
+                                        } else {
+                                            log(null, LogLevelFlags.LEVEL_DEBUG, @"❌  No API version information could be found in: $$apiFileName");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (RegexError regexError) {
+
+            }
+         }
     }
 
     private void checkSnapshot(Json.Array jsonArray) {
