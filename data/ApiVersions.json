@@ -1,0 +1,1435 @@
+{
+    "1.18_experimental-snapshot-6": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental",
+            "0.40.0+1.18_experimental"
+        ],
+        "LatestVersion": "0.40.0+1.18_experimental"
+    },
+    "1.18_experimental-snapshot-5": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental"
+        ],
+        "LatestVersion": "0.37.2+1.18_experimental"
+    },
+    "1.18_experimental-snapshot-4": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental"
+        ],
+        "LatestVersion": "0.37.2+1.18_experimental"
+    },
+    "1.18_experimental-snapshot-3": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental"
+        ],
+        "LatestVersion": "0.37.2+1.18_experimental"
+    },
+    "1.18_experimental-snapshot-2": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental"
+        ],
+        "LatestVersion": "0.37.2+1.18_experimental"
+    },
+    "1.18_experimental-snapshot-1": {
+        "APIVersions": [
+            "0.37.2+1.18_experimental"
+        ],
+        "LatestVersion": "0.37.2+1.18_experimental"
+    },
+    "1.17.1": {
+        "APIVersions": [
+            "0.37.0+1.17",
+            "0.37.1+1.17",
+            "0.37.2+1.17",
+            "0.38.0+1.17",
+            "0.38.1+1.17",
+            "0.38.2+1.17",
+            "0.39.0+1.17",
+            "0.39.1+1.17",
+            "0.39.2+1.17",
+            "0.40.0+1.17"
+        ],
+        "LatestVersion": "0.40.0+1.17"
+    },
+    "1.17.1-rc2": {
+        "APIVersions": [
+            "0.36.1+1.17"
+        ],
+        "LatestVersion": "0.36.1+1.17"
+    },
+    "1.17.1-rc1": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17.1-pre3": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17.1-pre2": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17.1-pre1": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17": {
+        "APIVersions": [
+            "0.34.10+1.17",
+            "0.35.0+1.17",
+            "0.35.1+1.17",
+            "0.35.2+1.17",
+            "0.36.0+1.17"
+        ],
+        "LatestVersion": "0.36.0+1.17"
+    },
+    "1.17-rc2": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17-rc1": {
+        "APIVersions": [
+            "0.34.9+1.17"
+        ],
+        "LatestVersion": "0.34.9+1.17"
+    },
+    "1.17-pre5": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17-pre4": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17-pre3": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17-pre2": {
+        "APIVersions": [
+            "0.34.8+1.17.jar"
+        ],
+        "LatestVersion": "0.34.8+1.17.jar"
+    },
+    "1.17-pre1": {
+        "APIVersions": [
+            "0.34.8+1.17"
+        ],
+        "LatestVersion": "0.34.8+1.17"
+    },
+    "21w20a": {
+        "APIVersions": [
+            "0.34.5+1.17",
+            "0.34.6+1.17",
+            "0.34.7+1.17"
+        ],
+        "LatestVersion": "0.34.7+1.17"
+    },
+    "21w19a": {
+        "APIVersions": [
+            "0.34.4+1.17"
+        ],
+        "LatestVersion": "0.34.4+1.17"
+    },
+    "21w18a": {
+        "APIVersions": [
+            "0.34.2+1.17",
+            "0.34.3+1.17"
+        ],
+        "LatestVersion": "0.34.3+1.17"
+    },
+    "21w17a": {
+        "APIVersions": [
+            "0.33.4+1.17",
+            "0.34.0+1.17",
+            "0.34.1+1.17"
+        ],
+        "LatestVersion": "0.34.1+1.17"
+    },
+    "21w16a": {
+        "APIVersions": [
+            "0.33.1+1.17",
+            "0.33.3+1.17"
+        ],
+        "LatestVersion": "0.33.3+1.17"
+    },
+    "21w15a": {
+        "APIVersions": [
+            "0.32.8+1.17",
+            "0.32.9+1.17",
+            "0.33.0+1.17"
+        ],
+        "LatestVersion": "0.33.0+1.17"
+    },
+    "21w14a": {
+        "APIVersions": [
+            "0.32.7+1.17"
+        ],
+        "LatestVersion": "0.32.7+1.17"
+    },
+    "21w13a": {
+        "APIVersions": [
+            "0.32.6+1.17"
+        ],
+        "LatestVersion": "0.32.6+1.17"
+    },
+    "21w11a": {
+        "APIVersions": [
+            "0.32.4+1.17",
+            "0.32.5+1.17"
+        ],
+        "LatestVersion": "0.32.5+1.17"
+    },
+    "21w10a": {
+        "APIVersions": [
+            "0.32.1+1.17",
+            "0.32.2+1.17"
+        ],
+        "LatestVersion": "0.32.2+1.17"
+    },
+    "21w08b": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "21w08a": {
+        "APIVersions": [
+            "0.31.1+1.17",
+            "0.31.2+1.17",
+            "0.32.0+1.17"
+        ],
+        "LatestVersion": "0.32.0+1.17"
+    },
+    "21w07a": {
+        "APIVersions": [
+            "0.30.5+1.17",
+            "0.31.0+1.17"
+        ],
+        "LatestVersion": "0.31.0+1.17"
+    },
+    "21w06a": {
+        "APIVersions": [
+            "0.30.2+1.17",
+            "0.30.3+1.17",
+            "0.30.4+1.17"
+        ],
+        "LatestVersion": "0.30.4+1.17"
+    },
+    "21w05b": {
+        "APIVersions": [
+            "0.30.1+1.17.jar"
+        ],
+        "LatestVersion": "0.30.1+1.17.jar"
+    },
+    "21w05a": {
+        "APIVersions": [
+            "0.30.1+1.17"
+        ],
+        "LatestVersion": "0.30.1+1.17"
+    },
+    "21w03a": {
+        "APIVersions": [
+            "0.29.5+1.17",
+            "0.30.0+1.17"
+        ],
+        "LatestVersion": "0.30.0+1.17"
+    },
+    "1.16.5": {
+        "APIVersions": [
+            "0.29.4+1.16",
+            "0.30.0+1.16",
+            "0.30.3+1.16",
+            "0.31.0+1.16",
+            "0.32.0+1.16",
+            "0.32.5+1.16",
+            "0.32.9+1.16",
+            "0.33.0+1.16",
+            "0.33.1+1.16",
+            "0.34.0+1.16",
+            "0.34.1+1.16",
+            "0.34.2+1.16",
+            "0.34.6+1.16",
+            "0.34.7+1.16",
+            "0.35.0+1.16",
+            "0.35.1+1.16",
+            "0.36.0+1.16",
+            "0.37.0+1.16",
+            "0.37.1+1.16",
+            "0.37.2+1.16",
+            "0.38.0+1.16",
+            "0.38.1+1.16",
+            "0.38.2+1.16",
+            "0.39.0+1.16",
+            "0.39.1+1.16",
+            "0.39.2+1.16",
+            "0.40.0+1.16"
+        ],
+        "LatestVersion": "0.40.0+1.16"
+    },
+    "1.16.5-rc1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "20w51a": {
+        "APIVersions": [
+            "0.28.2+1.17",
+            "0.28.3+1.17",
+            "0.28.4+1.17",
+            "0.29.0+1.17",
+            "0.29.1+1.17",
+            "0.29.2+1.17",
+            "0.29.3+1.17",
+            "0.29.4+1.17"
+        ],
+        "LatestVersion": "0.29.4+1.17"
+    },
+    "20w49a": {
+        "APIVersions": [
+            "0.27.2+1.17",
+            "0.27.3+1.17",
+            "0.28.0+1.17",
+            "0.28.1+1.17"
+        ],
+        "LatestVersion": "0.28.1+1.17"
+    },
+    "20w48a": {
+        "APIVersions": [
+            "0.26.4+1.17",
+            "0.27.0+1.17",
+            "0.27.1+1.17"
+        ],
+        "LatestVersion": "0.27.1+1.17"
+    },
+    "20w46a": {
+        "APIVersions": [
+            "0.25.6+1.17",
+            "0.25.7+1.17",
+            "0.26.0+1.17",
+            "0.26.1+1.17",
+            "0.26.2+1.17",
+            "0.26.3+1.17"
+        ],
+        "LatestVersion": "0.26.3+1.17"
+    },
+    "20w45a": {
+        "APIVersions": [
+            "0.25.3+1.17",
+            "0.25.4+1.17",
+            "0.25.5+1.17"
+        ],
+        "LatestVersion": "0.25.5+1.17"
+    },
+    "1.16.4": {
+        "APIVersions": [
+            "0.25.1+build.416-1.16",
+            "0.25.4+1.16",
+            "0.25.7+1.16",
+            "0.26.0+1.16",
+            "0.26.1+1.16",
+            "0.26.2+1.16",
+            "0.26.3+1.16",
+            "0.27.0+1.16",
+            "0.27.1+1.16",
+            "0.28.0+1.16",
+            "0.28.1+1.16",
+            "0.28.3+1.16",
+            "0.28.4+1.16",
+            "0.29.0+1.16",
+            "0.29.1+1.16",
+            "0.29.2+1.16",
+            "0.29.3+1.16"
+        ],
+        "LatestVersion": "0.29.3+1.16"
+    },
+    "1.16.4-rc1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16.4-pre2": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16.4-pre1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16.3": {
+        "APIVersions": [
+            "0.20.2+build.402-1.16",
+            "0.21.0+build.407-1.16",
+            "0.22.0+build.408-1.16",
+            "0.22.1+build.409-1.16",
+            "0.23.0+build.410-1.16",
+            "0.24.0+build.411-1.16",
+            "0.24.1+build.412-1.16",
+            "0.24.2+build.413-1.16",
+            "0.24.3+build.414-1.16",
+            "0.25.0+build.415-1.16"
+        ],
+        "LatestVersion": "0.25.0+build.415-1.16"
+    },
+    "1.16.3-rc1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16.2": {
+        "APIVersions": [
+            "0.17.2+build.396-1.16",
+            "0.18.0+build.397-1.16",
+            "0.19.0+build.398-1.16",
+            "0.20.0+build.399-1.16",
+            "0.20.1+build.401-1.16"
+        ],
+        "LatestVersion": "0.20.1+build.401-1.16"
+    },
+    "1.16.2-rc2": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16.2-rc1": {
+        "APIVersions": [
+            "0.17.0+build.393-1.16",
+            "0.17.1+build.394-1.16"
+        ],
+        "LatestVersion": "0.17.1+build.394-1.16"
+    },
+    "1.16.2-pre3": {
+        "APIVersions": [
+            "0.16.4+build.392-1.16"
+        ],
+        "LatestVersion": "0.16.4+build.392-1.16"
+    },
+    "1.16.2-pre2": {
+        "APIVersions": [
+            "0.16.4+build.392-1.16"
+        ],
+        "LatestVersion": "0.16.4+build.392-1.16"
+    },
+    "1.16.2-pre1": {
+        "APIVersions": [
+            "0.16.1+build.387-1.16",
+            "0.16.3+build.390-1.16"
+        ],
+        "LatestVersion": "0.16.3+build.390-1.16"
+    },
+    "20w30a": {
+        "APIVersions": [
+            "0.15.2+build.382-1.16",
+            "0.16.0+build.386-1.16"
+        ],
+        "LatestVersion": "0.16.0+build.386-1.16"
+    },
+    "20w29a": {
+        "APIVersions": [
+            "0.14.6+build.377-1.16",
+            "0.15.0+build.379-1.16",
+            "0.15.1+build.380-1.16"
+        ],
+        "LatestVersion": "0.15.1+build.380-1.16"
+    },
+    "20w28a": {
+        "APIVersions": [
+            "0.14.3+build.374-1.16",
+            "0.14.4+build.375-1.16",
+            "0.14.5+build.376-1.16"
+        ],
+        "LatestVersion": "0.14.5+build.376-1.16"
+    },
+    "20w27a": {
+        "APIVersions": [
+            "0.14.2+build.373-1.16"
+        ],
+        "LatestVersion": "0.14.2+build.373-1.16"
+    },
+    "1.16.1": {
+        "APIVersions": [
+            "0.13.1+build.370-1.16",
+            "0.14.0+build.371-1.16",
+            "0.14.1+build.372-1.16",
+            "0.15.0+build.379-1.16.1",
+            "0.15.1+build.380-1.16.1",
+            "0.16.0+build.384-1.16.1",
+            "0.16.2+build.385-1.16.1",
+            "0.17.0+build.386-1.16.1",
+            "0.18.0+build.387-1.16.1"
+        ],
+        "LatestVersion": "0.18.0+build.387-1.16.1"
+    },
+    "1.16": {
+        "APIVersions": [
+            "0.13.1+build.370-1.16"
+        ],
+        "LatestVersion": "0.13.1+build.370-1.16"
+    },
+    "1.16-rc1": {
+        "APIVersions": [
+            "0.12.4+build.365-1.16",
+            "0.12.5+build.367-1.16"
+        ],
+        "LatestVersion": "0.12.5+build.367-1.16"
+    },
+    "1.16-pre8": {
+        "APIVersions": [
+            "0.12.4+build.365-1.16"
+        ],
+        "LatestVersion": "0.12.4+build.365-1.16"
+    },
+    "1.16-pre7": {
+        "APIVersions": [
+            "0.12.4+build.365-1.16"
+        ],
+        "LatestVersion": "0.12.4+build.365-1.16"
+    },
+    "1.16-pre6": {
+        "APIVersions": [
+            "0.12.2+build.362-1.16",
+            "0.12.3+build.363-1.16"
+        ],
+        "LatestVersion": "0.12.3+build.363-1.16"
+    },
+    "1.16-pre5": {
+        "APIVersions": [
+            "0.12.1+build.361-1.16"
+        ],
+        "LatestVersion": "0.12.1+build.361-1.16"
+    },
+    "1.16-pre4": {
+        "APIVersions": [
+            "0.11.10+build.359-1.16",
+            "0.12.0+build.360-1.16"
+        ],
+        "LatestVersion": "0.12.0+build.360-1.16"
+    },
+    "1.16-pre3": {
+        "APIVersions": [
+            "0.11.8+build.357-1.16",
+            "0.11.9+build.358-1.16"
+        ],
+        "LatestVersion": "0.11.9+build.358-1.16"
+    },
+    "1.16-pre2": {
+        "APIVersions": [
+            "0.11.6+build.355-1.16",
+            "0.11.7+build.356-1.16"
+        ],
+        "LatestVersion": "0.11.7+build.356-1.16"
+    },
+    "1.16-pre1": {
+        "APIVersions": [
+            "0.11.3+build.352-1.16",
+            "0.11.4+build.353-1.16",
+            "0.11.5+build.354-1.16"
+        ],
+        "LatestVersion": "0.11.5+build.354-1.16"
+    },
+    "20w22a": {
+        "APIVersions": [
+            "0.10.11+build.348-1.16",
+            "0.11.0+build.349-1.16",
+            "0.11.1+build.350-1.16",
+            "0.11.2+build.351-1.16"
+        ],
+        "LatestVersion": "0.11.2+build.351-1.16"
+    },
+    "20w21a": {
+        "APIVersions": [
+            "0.10.10+build.347-1.16"
+        ],
+        "LatestVersion": "0.10.10+build.347-1.16"
+    },
+    "20w20b": {
+        "APIVersions": [
+            "0.10.9+build.346-1.16"
+        ],
+        "LatestVersion": "0.10.9+build.346-1.16"
+    },
+    "20w20a": {
+        "APIVersions": [
+            "0.10.9+build.346-1.16"
+        ],
+        "LatestVersion": "0.10.9+build.346-1.16"
+    },
+    "20w19a": {
+        "APIVersions": [
+            "0.10.5+build.341-1.16",
+            "0.10.6+build.342-1.16",
+            "0.10.7+build.344-1.16",
+            "0.10.8+build.345-1.16"
+        ],
+        "LatestVersion": "0.10.8+build.345-1.16"
+    },
+    "20w18a": {
+        "APIVersions": [
+            "0.10.0+build.335-1.16",
+            "0.10.1+build.336-1.16",
+            "0.10.2+build.337-1.16",
+            "0.10.3+build.338-1.16",
+            "0.10.4+build.340-1.16",
+            "0.7.1+build.331-1.16",
+            "0.8.0+build.332-1.16",
+            "0.9.0+build.334-1.16"
+        ],
+        "LatestVersion": "0.9.0+build.334-1.16"
+    },
+    "20w17a": {
+        "APIVersions": [
+            "0.6.2+build.327-1.16",
+            "0.7.0+build.330-1.16"
+        ],
+        "LatestVersion": "0.7.0+build.330-1.16"
+    },
+    "20w16a": {
+        "APIVersions": [
+            "0.5.11+build.322-1.16",
+            "0.5.12+build.323-1.16",
+            "0.5.13+build.324-1.16",
+            "0.6.0+build.325-1.16"
+        ],
+        "LatestVersion": "0.6.0+build.325-1.16"
+    },
+    "20w15a": {
+        "APIVersions": [
+            "0.5.10+build.320-1.16",
+            "0.5.9+build.319-1.16"
+        ],
+        "LatestVersion": "0.5.9+build.319-1.16"
+    },
+    "20w14a": {
+        "APIVersions": [
+            "0.5.7+build.314-1.16",
+            "0.5.8+build.316-1.16"
+        ],
+        "LatestVersion": "0.5.8+build.316-1.16"
+    },
+    "20w14infinite": {
+        "APIVersions": [
+            "0.5.7+build.2-20w14infinite"
+        ],
+        "LatestVersion": "0.5.7+build.2-20w14infinite"
+    },
+    "20w13b": {
+        "APIVersions": [
+            "0.5.6+build.313-1.16"
+        ],
+        "LatestVersion": "0.5.6+build.313-1.16"
+    },
+    "20w13a": {
+        "APIVersions": [
+            "0.5.6+build.313-1.16"
+        ],
+        "LatestVersion": "0.5.6+build.313-1.16"
+    },
+    "20w12a": {
+        "APIVersions": [
+            "0.5.4+build.310-1.16",
+            "0.5.5+build.311-1.16"
+        ],
+        "LatestVersion": "0.5.5+build.311-1.16"
+    },
+    "20w11a": {
+        "APIVersions": [
+            "0.5.3+build.308-1.16"
+        ],
+        "LatestVersion": "0.5.3+build.308-1.16"
+    },
+    "20w10a": {
+        "APIVersions": [
+            "0.4.34+build.303-1.16",
+            "0.5.0+build.304-1.16",
+            "0.5.1+build.305-1.16",
+            "0.5.2+build.306-1.16"
+        ],
+        "LatestVersion": "0.5.2+build.306-1.16"
+    },
+    "20w09a": {
+        "APIVersions": [
+            "0.4.33+build.301-1.16"
+        ],
+        "LatestVersion": "0.4.33+build.301-1.16"
+    },
+    "20w08a": {
+        "APIVersions": [
+            "0.4.33+build.299-1.16"
+        ],
+        "LatestVersion": "0.4.33+build.299-1.16"
+    },
+    "20w07a": {
+        "APIVersions": [
+            "0.4.33+build.298-1.16",
+            "0.4.33+build.299-1.16"
+        ],
+        "LatestVersion": "0.4.33+build.299-1.16"
+    },
+    "20w06a": {
+        "APIVersions": [
+            "0.4.30+build.294-1.16",
+            "0.4.31+build.295-1.16",
+            "0.4.32+build.296-1.16"
+        ],
+        "LatestVersion": "0.4.32+build.296-1.16"
+    },
+    "1.15.2": {
+        "APIVersions": [
+            "0.10.0+build.305-1.15",
+            "0.10.1+build.306-1.15",
+            "0.10.1+build.307-1.15",
+            "0.10.7+build.309-1.15",
+            "0.10.8+build.310-1.15",
+            "0.11.0+build.311-1.15",
+            "0.11.1+build.312-1.15",
+            "0.12.0+build.313-1.15",
+            "0.13.1+build.316-1.15",
+            "0.14.0+build.317-1.15",
+            "0.15.0+build.318-1.15",
+            "0.15.1+build.319-1.15",
+            "0.16.0+build.321-1.15",
+            "0.16.2+build.322-1.15",
+            "0.17.0+build.323-1.15",
+            "0.18.0+build.324-1.15",
+            "0.19.0+build.325-1.15",
+            "0.21.0+build.326-1.15",
+            "0.21.1+build.327-1.15",
+            "0.23.0+build.328-1.15",
+            "0.23.1+1.15",
+            "0.28.4+1.15",
+            "0.28.5+1.15",
+            "0.4.29+build.290-1.15",
+            "0.4.30+build.291-1.15",
+            "0.4.32+build.292-1.15",
+            "0.5.0+build.293-1.15",
+            "0.5.1+build.294-1.15",
+            "0.5.12+build.296-1.15",
+            "0.5.13+build.297-1.15",
+            "0.6.0+build.298-1.15",
+            "0.7.1+build.301-1.15",
+            "0.8.0+build.302-1.15",
+            "0.9.0+build.303-1.15"
+        ],
+        "LatestVersion": "0.9.0+build.303-1.15"
+    },
+    "1.15.2-pre2": {
+        "APIVersions": [
+            "0.4.28+build.288-1.15"
+        ],
+        "LatestVersion": "0.4.28+build.288-1.15"
+    },
+    "1.15.2-pre1": {
+        "APIVersions": [
+            "0.4.28+build.288-1.15"
+        ],
+        "LatestVersion": "0.4.28+build.288-1.15"
+    },
+    "1.15.1": {
+        "APIVersions": [
+            "0.4.25+build.282-1.15",
+            "0.4.26+build.283-1.15",
+            "0.4.27+build.286-1.15"
+        ],
+        "LatestVersion": "0.4.27+build.286-1.15"
+    },
+    "1.15.1-pre1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.15": {
+        "APIVersions": [
+            "0.4.23+build.276-1.15",
+            "0.4.24+build.279-1.15"
+        ],
+        "LatestVersion": "0.4.24+build.279-1.15"
+    },
+    "1.15-pre7": {
+        "APIVersions": [
+            "0.4.20+build.273-1.15"
+        ],
+        "LatestVersion": "0.4.20+build.273-1.15"
+    },
+    "1.15-pre6": {
+        "APIVersions": [
+            "0.4.20+build.273-1.15"
+        ],
+        "LatestVersion": "0.4.20+build.273-1.15"
+    },
+    "1.15-pre5": {
+        "APIVersions": [
+            "0.4.20+build.273-1.15"
+        ],
+        "LatestVersion": "0.4.20+build.273-1.15"
+    },
+    "1.15-pre4": {
+        "APIVersions": [
+            "0.4.19+build.272-1.15"
+        ],
+        "LatestVersion": "0.4.19+build.272-1.15"
+    },
+    "1.15-pre3": {
+        "APIVersions": [
+            "0.4.18+build.271-1.15"
+        ],
+        "LatestVersion": "0.4.18+build.271-1.15"
+    },
+    "1.15-pre2": {
+        "APIVersions": [
+            "0.4.14+build.266-1.15",
+            "0.4.15+build.267-1.15",
+            "0.4.16+build.268-1.15",
+            "0.4.16+build.269-1.15"
+        ],
+        "LatestVersion": "0.4.16+build.269-1.15"
+    },
+    "1.15-pre1": {
+        "APIVersions": [
+            "0.4.13+build.263-1.15",
+            "0.4.13+build.264-1.15"
+        ],
+        "LatestVersion": "0.4.13+build.264-1.15"
+    },
+    "19w46b": {
+        "APIVersions": [
+            "0.4.12+build.261-1.15"
+        ],
+        "LatestVersion": "0.4.12+build.261-1.15"
+    },
+    "19w46a": {
+        "APIVersions": [
+            "0.4.12+build.261-1.15"
+        ],
+        "LatestVersion": "0.4.12+build.261-1.15"
+    },
+    "19w45b": {
+        "APIVersions": [
+            "0.4.11+build.260-1.15"
+        ],
+        "LatestVersion": "0.4.11+build.260-1.15"
+    },
+    "19w45a": {
+        "APIVersions": [
+            "0.4.10+build.259-1.15"
+        ],
+        "LatestVersion": "0.4.10+build.259-1.15"
+    },
+    "19w44a": {
+        "APIVersions": [
+            "0.4.9+build.258-1.15"
+        ],
+        "LatestVersion": "0.4.9+build.258-1.15"
+    },
+    "19w42a": {
+        "APIVersions": [
+            "0.4.5+build.250-1.15",
+            "0.4.6+build.251-1.15",
+            "0.4.7+build.252-1.15",
+            "0.4.8+build.255-1.15"
+        ],
+        "LatestVersion": "0.4.8+build.255-1.15"
+    },
+    "19w41a": {
+        "APIVersions": [
+            "0.4.4+build.248-1.15"
+        ],
+        "LatestVersion": "0.4.4+build.248-1.15"
+    },
+    "19w40a": {
+        "APIVersions": [
+            "0.4.3+build.247-1.15"
+        ],
+        "LatestVersion": "0.4.3+build.247-1.15"
+    },
+    "19w39a": {
+        "APIVersions": [
+            "0.4.0+build.239-1.15",
+            "0.4.1+build.241-1.15",
+            "0.4.1+build.242-1.15",
+            "0.4.2+build.244-1.15"
+        ],
+        "LatestVersion": "0.4.2+build.244-1.15"
+    },
+    "19w38b": {
+        "APIVersions": [
+            "0.3.2+build.232-1.15",
+            "0.3.3+build.235-1.15",
+            "0.3.4+build.236-1.15",
+            "0.3.4+build.237-1.15",
+            "0.3.4+build.238-1.15"
+        ],
+        "LatestVersion": "0.3.4+build.238-1.15"
+    },
+    "19w38a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "19w37a": {
+        "APIVersions": [
+            "0.3.2+build.225-1.15",
+            "0.3.2+build.227-1.15",
+            "0.3.2+build.229-1.15",
+            "0.3.2+build.230-1.15"
+        ],
+        "LatestVersion": "0.3.2+build.230-1.15"
+    },
+    "19w36a": {
+        "APIVersions": [
+            "0.3.2+build.219-1.15",
+            "0.3.2+build.221-1.15",
+            "0.3.2+build.223-1.15"
+        ],
+        "LatestVersion": "0.3.2+build.223-1.15"
+    },
+    "19w35a": {
+        "APIVersions": [
+            "0.3.2+build.213-1.15",
+            "0.3.2+build.214-1.15",
+            "0.3.2+build.215-1.15",
+            "0.3.2+build.217-1.15"
+        ],
+        "LatestVersion": "0.3.2+build.217-1.15"
+    },
+    "19w34a": {
+        "APIVersions": [
+            "0.3.2+build.212-1.15"
+        ],
+        "LatestVersion": "0.3.2+build.212-1.15"
+    },
+    "1.14.4": {
+        "APIVersions": [
+            "0.12.0+build.254-1.14",
+            "0.13.1+build.257-1.14",
+            "0.14.0+build.258-1.14",
+            "0.15.0+build.259-1.14",
+            "0.15.1+build.260-1.14",
+            "0.16.2+build.261-1.14",
+            "0.19.0+build.262-1.14",
+            "0.23.0+build.264-1.14",
+            "0.23.1+1.14",
+            "0.23.2+1.14",
+            "0.28.4+1.14",
+            "0.28.5+1.14",
+            "0.3.0+build.200",
+            "0.3.0+build.206",
+            "0.3.0+build.207",
+            "0.3.1+build.208",
+            "0.3.2+build.216-1.14",
+            "0.3.2+build.218-1.14",
+            "0.3.2+build.220-1.14",
+            "0.3.2+build.224-1.14",
+            "0.3.2+build.226-1.14",
+            "0.3.2+build.233-1.14",
+            "0.3.3+build.234-1.14",
+            "0.4.0+build.240-1.14",
+            "0.4.1+build.245-1.14",
+            "0.4.2+build.246-1.14",
+            "0.4.3+build.247-1.14",
+            "0.5.12+build.249-1.14",
+            "0.8.0+build.250-1.14",
+            "0.8.1+build.251-1.14",
+            "0.8.2+build.252-1.14"
+        ],
+        "LatestVersion": "0.8.2+build.252-1.14"
+    },
+    "1.14.4-pre7": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.4-pre6": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.4-pre5": {
+        "APIVersions": [
+            "0.3.0+build.194",
+            "0.3.0+build.196"
+        ],
+        "LatestVersion": "0.3.0+build.196"
+    },
+    "1.14.4-pre4": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.4-pre3": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.4-pre2": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.4-pre1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.3": {
+        "APIVersions": [
+            "0.3.0+build.186",
+            "0.3.0+build.187",
+            "0.3.0+build.188",
+            "0.3.0+build.191",
+            "0.3.0+build.192",
+            "0.3.0+build.197",
+            "0.3.0+build.198"
+        ],
+        "LatestVersion": "0.3.0+build.198"
+    },
+    "1.14.3-pre4": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.3-pre3": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.3-pre2": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.3-pre1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.2": {
+        "APIVersions": [
+            "0.3.0+build.170",
+            "0.3.0+build.171",
+            "0.3.0+build.172",
+            "0.3.0+build.173",
+            "0.3.0+build.174",
+            "0.3.0+build.175",
+            "0.3.0+build.176",
+            "0.3.0+build.177",
+            "0.3.0+build.178",
+            "0.3.0+build.179",
+            "0.3.0+build.180",
+            "0.3.0+build.181",
+            "0.3.0+build.183",
+            "0.3.0+build.184",
+            "0.3.0+build.185"
+        ],
+        "LatestVersion": "0.3.0+build.185"
+    },
+    "1.14.2 Pre-Release 4": {
+        "APIVersions": [
+            "0.3.0-pre+build.168",
+            "0.3.0-pre+build.169"
+        ],
+        "LatestVersion": "0.3.0-pre+build.169"
+    },
+    "1.14.2 Pre-Release 3": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.2 Pre-Release 2": {
+        "APIVersions": [
+            "0.3.0-pre+build.158",
+            "0.3.0-pre+build.161",
+            "0.3.0-pre+build.162",
+            "0.3.0-pre+build.163",
+            "0.3.0-pre+build.164",
+            "0.3.0-pre+build.165",
+            "0.3.0-pre+build.166",
+            "0.3.0-pre+build.167"
+        ],
+        "LatestVersion": "0.3.0-pre+build.167"
+    },
+    "1.14.2 Pre-Release 1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14.1": {
+        "APIVersions": [
+            "0.3.0-pre+build.156",
+            "0.3.0-pre+build.157",
+            "0.3.0-pre+build.157a"
+        ],
+        "LatestVersion": "0.3.0-pre+build.157a"
+    },
+    "1.14.1 Pre-Release 2": {
+        "APIVersions": [
+            "0.3.0-pre+build.155"
+        ],
+        "LatestVersion": "0.3.0-pre+build.155"
+    },
+    "1.14.1 Pre-Release 1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14": {
+        "APIVersions": [
+            "0.2.7+build.127"
+        ],
+        "LatestVersion": "0.2.7+build.127"
+    },
+    "1.14 Pre-Release 5": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14 Pre-Release 4": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14 Pre-Release 3": {
+        "APIVersions": [
+            "0.2.7+build.123",
+            "0.2.7+build.124",
+            "0.2.7+build.125",
+            "0.2.7+build.126"
+        ],
+        "LatestVersion": "0.2.7+build.126"
+    },
+    "1.14 Pre-Release 2": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14 Pre-Release 1": {
+        "APIVersions": [
+            "0.2.7+build.122"
+        ],
+        "LatestVersion": "0.2.7+build.122"
+    },
+    "19w14b": {
+        "APIVersions": [
+            "0.2.6.119",
+            "0.2.6.120",
+            "0.2.6.121"
+        ],
+        "LatestVersion": "0.2.6.121"
+    },
+    "19w14a": {
+        "APIVersions": [
+            "0.2.6.119"
+        ],
+        "LatestVersion": "0.2.6.119"
+    },
+    "3D Shareware v1.34": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "19w13b": {
+        "APIVersions": [
+            "0.2.6.117"
+        ],
+        "LatestVersion": "0.2.6.117"
+    },
+    "19w13a": {
+        "APIVersions": [
+            "0.2.6.116",
+            "0.2.6.117"
+        ],
+        "LatestVersion": "0.2.6.117"
+    },
+    "19w12b": {
+        "APIVersions": [
+            "0.2.5.114"
+        ],
+        "LatestVersion": "0.2.5.114"
+    },
+    "19w12a": {
+        "APIVersions": [
+            "0.2.4.113"
+        ],
+        "LatestVersion": "0.2.4.113"
+    },
+    "19w11b": {
+        "APIVersions": [
+            "0.2.3.111"
+        ],
+        "LatestVersion": "0.2.3.111"
+    },
+    "19w11a": {
+        "APIVersions": [
+            "0.2.3.110"
+        ],
+        "LatestVersion": "0.2.3.110"
+    },
+    "19w09a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "19w08b": {
+        "APIVersions": [
+            "0.2.3.104",
+            "0.2.3.105",
+            "0.2.3.106",
+            "0.2.3.107",
+            "0.2.3.108",
+            "0.2.3.109"
+        ],
+        "LatestVersion": "0.2.3.109"
+    },
+    "19w08a": {
+        "APIVersions": [
+            "0.2.2.103",
+            "0.2.3.104"
+        ],
+        "LatestVersion": "0.2.3.104"
+    },
+    "19w07a": {
+        "APIVersions": [
+            "0.2.1.101",
+            "0.2.1.93",
+            "0.2.1.94",
+            "0.2.1.95",
+            "0.2.1.96",
+            "0.2.1.97",
+            "0.2.1.98"
+        ],
+        "LatestVersion": "0.2.1.98"
+    },
+    "19w06a": {
+        "APIVersions": [
+            "0.2.0.89",
+            "0.2.0.90",
+            "0.2.0.91",
+            "0.2.0.92"
+        ],
+        "LatestVersion": "0.2.0.92"
+    },
+    "19w05a": {
+        "APIVersions": [
+            "0.1.5.84",
+            "0.1.5.85",
+            "0.1.5.86",
+            "0.1.5.87",
+            "0.1.5.88"
+        ],
+        "LatestVersion": "0.1.5.88"
+    },
+    "19w04b": {
+        "APIVersions": [
+            "0.1.5.80",
+            "0.1.5.81",
+            "0.1.5.82",
+            "0.1.5.83"
+        ],
+        "LatestVersion": "0.1.5.83"
+    },
+    "19w04a": {
+        "APIVersions": [
+            "0.1.4.79"
+        ],
+        "LatestVersion": "0.1.4.79"
+    },
+    "19w03c": {
+        "APIVersions": [
+            "0.1.4.78"
+        ],
+        "LatestVersion": "0.1.4.78"
+    },
+    "19w03b": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "19w03a": {
+        "APIVersions": [
+            "0.1.4.74",
+            "0.1.4.75",
+            "0.1.4.76",
+            "0.1.4.77"
+        ],
+        "LatestVersion": "0.1.4.77"
+    },
+    "19w02a": {
+        "APIVersions": [
+            "0.1.4.71",
+            "0.1.4.72",
+            "0.1.4.73"
+        ],
+        "LatestVersion": "0.1.4.73"
+    },
+    "18w50a": {
+        "APIVersions": [
+            "0.1.1.47",
+            "0.1.1.49",
+            "0.1.1.50",
+            "0.1.1.51",
+            "0.1.1.52",
+            "0.1.1.53",
+            "0.1.1.54",
+            "0.1.1.55",
+            "0.1.1.56",
+            "0.1.1.57",
+            "0.1.1.58",
+            "0.1.1.60",
+            "0.1.1.61",
+            "0.1.2.62",
+            "0.1.2.63",
+            "0.1.2.64",
+            "0.1.3.66",
+            "0.1.3.67",
+            "0.1.3.68",
+            "0.1.4.69"
+        ],
+        "LatestVersion": "0.1.4.69"
+    },
+    "18w49a": {
+        "APIVersions": [
+            "0.1.0.46"
+        ],
+        "LatestVersion": "0.1.0.46"
+    },
+    "18w48b": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w48a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w47b": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w47a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w46a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w45a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w44a": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w43c": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "18w43b": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.16_combat-3": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1_16_combat-0": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14_combat-212796": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1_15_combat-6": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.15_combat-1": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14_combat-3": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    },
+    "1.14_combat-0": {
+        "APIVersions": [
+            ""
+        ],
+        "LatestVersion": ""
+    }
+}
